@@ -1,7 +1,7 @@
 require_relative '../db/tasks.rb'
+require_relative 'sanitize/sanitize.rb'
 
-module FuntionsTasks
-    def create_task
-        puts "ola"
+module Tasks
+    def create_task(title, comment)
     end
 end
