@@ -14,6 +14,3 @@ class Tasks
         puts "Ta tentando SQLI seu poha"
     end
 end
-
-tasks = Tasks.new
-tasks.create_task("Read Book", "5 page")
