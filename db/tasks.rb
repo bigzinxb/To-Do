@@ -10,8 +10,8 @@ module TasksDataBase
             @db = SQLite3::Database.new  "tasks.db"
             self.create_table
         end
-
-        def self.create_task(title, comment)
+        
+        def self.insert_task(title, comment)
             @db.execute("INSERT INTO Tasks VALUES (null,?,?)", title, comment)
         end
 
