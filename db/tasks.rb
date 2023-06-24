@@ -5,7 +5,6 @@ class FunctionsDatabase
 
     def initialize
         @db = SQLite3::Database.new "tasks.db"
-        self.create_table
     end
 
     def create_tasks(title, comment)
