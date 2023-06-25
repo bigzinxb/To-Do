@@ -18,6 +18,10 @@ class Tasks < FunctionsDatabase
         end
     end
 
+    def read_task
+        @functions.read_tasks
+    end
+
     def update_task(title_update, comment_update, id_task)
         if Sanitize.sanitize_input(title_update) != nil && Sanitize.sanitize_input(comment_update) != nil && Sanitize.sanitize_input(id_task) != nil
             @functions.update_tasks(title_update, comment_update, id_task)
