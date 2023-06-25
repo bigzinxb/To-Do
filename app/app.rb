@@ -1,5 +1,5 @@
 require_relative '../db/tasks.rb'
-require_relative 'sanitize/sanitize.rb'
+require_relative '../lib/sanitize/sanitize.rb'
 
 class Tasks < FunctionsDatabase
     include Sanitize
