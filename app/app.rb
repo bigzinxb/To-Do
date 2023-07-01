@@ -14,7 +14,7 @@ class Tasks < FunctionsDatabase
         if Sanitize.sanitize_input(title) != nil && Sanitize.sanitize_input(comment) != nil
             @functions.create_tasks(title, comment)
         else
-            puts "SQLI?"
+            puts "SQLI? usuario e tudo gay"
         end
     end
 
@@ -26,7 +26,7 @@ class Tasks < FunctionsDatabase
         if Sanitize.sanitize_input(title_update) != nil && Sanitize.sanitize_input(comment_update) != nil && Sanitize.sanitize_input(id_task) != nil
             @functions.update_tasks(title_update, comment_update, id_task)
         else
-            puts "SQLI?"
+            puts "SQLI? usuario e tudo gay"
         end
     end
 
@@ -34,7 +34,7 @@ class Tasks < FunctionsDatabase
         if Sanitize.sanitize_input(id_task) != nil
             @functions.delete_tasks(id_task)
         else
-            puts "SQLI?"
+            puts "SQLI? usuario e tudo gay"
         end
     end
 end
